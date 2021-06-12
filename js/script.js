@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		`<img src="${recipes.image}" class="card-img-top" alt="${recipes.title}">
 		<div class="card-body">
 		  	<h5 class="card-title">${recipes.title}</h5>
-			  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#recipeModal" id="view-recipe" data-recipeID="${recipes.id}">
+			  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#recipeModal" id="view-recipe" data-recipeID="${recipes.id}">
 				Details
 			</button>
 		</div>`;
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function(){
 			ingredientsList.push(ingredient.value);
 			console.log(`Ingredients list: ${ingredientsList}`);
 
-			const itemList = `<li class="list-group-item">${ingredient.value}</li>`
+			const itemList = `<li class="list-group-item"><button type="button" class="btn-close"></button>${ingredient.value}</li>`
 			ingredientsContainer.innerHTML += itemList;
 			myIngredients.appendChild(ingredientsContainer);
 			console.log(ingredientsContainer.innerHTML);
