@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What can I cook?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center" id="header">
+                <h1>What can I cook?</h1>
+                <h5>Find out what you can make from things in your kitchen!</h5>
+            </div>
+            <div class="col-md-12" id="form">
+                <h5>What do you have?</h5>
+                <form id="form" class="input-group">
+                    <input type="text" name="ingredient" id="ingredient" class="form-control">
+                    <button class="btn btn-primary" id="add-ingredient" type="submit">Add</button>
+                </form>
+            </div>
+            <div class="col-md-12" id="my-ingredients">
+                <h5>Your ingredients:</h5>
+                <button class="btn btn-primary" id="find-recipes">Find recipe</button>
+                
+            </div>
+            <div class="col-md-12 card-group" id="recipe-container">
+            </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="recipeModal" tabindex="-1" aria-labelledby="recipeModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 id="recipe-title" class="modal-title" id="recipeModalLabel">Modal title!!!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="recipe-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a  id="recipe-url" href="" class="btn btn-primary">Visit recipe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
